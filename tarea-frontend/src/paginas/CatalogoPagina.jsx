@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import * as yup from "yup";
 import EstadoCarga from "../componentes/EstadoCarga";

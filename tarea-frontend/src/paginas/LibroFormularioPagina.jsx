@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import * as yup from "yup";
 import { MENSAJES } from "../constantes/api";
@@ -12,7 +12,7 @@ const esquemaLibro = yup.object({
   autor: yup.number().typeError("Seleccioná un autor.").required("El autor es obligatorio."),
   genero: yup.number().typeError("Seleccioná un género.").required("El género es obligatorio."),
   estante: yup.number().typeError("Seleccioná un estante.").required("El estante es obligatorio."),
-  saga: yup.number().nullable(),
+  saga: yup.number().transform((valor, valorOriginal) => (valorOriginal === "" ? null : valor)).nullable(),
   isbn: yup.string().max(20, "El ISBN no puede superar 20 caracteres.").nullable(),
   descripcion: yup.string().nullable(),
 });

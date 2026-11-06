@@ -1,3 +1,4 @@
+import React from "react";
 import { useCarga } from "../hooks/useCarga";
 import EstadoCarga from "../componentes/EstadoCarga";
 import { MENSAJES } from "../constantes/api";

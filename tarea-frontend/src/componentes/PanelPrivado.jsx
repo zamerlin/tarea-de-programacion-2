@@ -1,3 +1,4 @@
+import React from "react";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { RUTAS, TIPOS_CATALOGO } from "../constantes/rutas";
 import { useAutenticacion } from "../hooks/useAutenticacion";

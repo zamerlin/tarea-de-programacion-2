@@ -1,3 +1,4 @@
+import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { RUTAS } from "./constantes/rutas";
 import { useAutenticacion } from "./hooks/useAutenticacion";

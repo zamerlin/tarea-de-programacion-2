@@ -1,5 +1,5 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { MENSAJES } from "../constantes/api";
 import { RUTAS } from "../constantes/rutas";
 import * as libroServicio from "../servicios/libroServicio";
